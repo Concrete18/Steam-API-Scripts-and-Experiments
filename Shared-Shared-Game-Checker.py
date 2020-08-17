@@ -1,6 +1,8 @@
 import json
 import time
 import requests
+import os
+from Check_for_API_File import Check_for_API
 
 
 def Get_Game_Names(steam_id):
@@ -51,4 +53,5 @@ def Create_Game_Lists():
 
 
 if __name__ == "__main__":
+    Check_for_API()
     Create_Game_Lists()
